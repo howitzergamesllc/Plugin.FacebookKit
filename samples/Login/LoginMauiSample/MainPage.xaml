@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:facebook="clr-namespace:Plugin.FacebookKit.Login.Controls;assembly=Plugin.FacebookKit.Login"
+             x:Class="LoginMauiSample.MainPage">
+
+    <Grid x:Name="layout">
+        <ScrollView>
+            <VerticalStackLayout
+                x:Name="verticallayout"
+                Padding="30,0"
+                Spacing="25">
+                <Grid x:Name="mainImageLayout">
+                    <Image
+                        x:Name="mainimage"
+                        Source="dotnet_bot.png"
+                        HeightRequest="185"
+                        Aspect="AspectFit"
+                        SemanticProperties.Description="dot net bot in a submarine number ten" />
+                    <facebook:ProfilePictureView
+                        x:Name="profilePicture"
+                        HeightRequest="185"
+                        WidthRequest="185"
+                        IsVisible="False"
+                        PictureMode="Large"/>
+                </Grid>
+
+                <Label
+                    Text="Facebook SDKs"
+                    Style="{StaticResource Headline}"
+                    SemanticProperties.HeadingLevel="Level1" />
+
+                <Label
+                    Text="LoginMauiSample"
+                    Style="{StaticResource SubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2" />
+                    
+                <facebook:LoginTooltipView
+                    x:Name="ToolTipView"
+                    DisplayDuration="00:00:10"
+                    Tagline="Login"
+                    AnchorView="{x:Reference Name=LogInBtn}"
+                    Message="Welcome To Facebook Login. Tooltip example."
+                    ColorStyle="NeutralGray"
+                    HorizontalOptions="Fill" />
+
+                <facebook:LoginButton
+                    x:Name="LogInBtn"
+                    HorizontalOptions="Fill" >
+                    <facebook:LoginButton.Permissions>
+                        <x:String>public_profile</x:String>
+                    </facebook:LoginButton.Permissions>
+                </facebook:LoginButton>
+
+                <Button
+                    x:Name="CheckLoggedInBtn"
+                    Text="Checktoken"
+                    Clicked="CheckLoggedIn"
+                    HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="ManualLoginBtn"
+                    Text="Login"
+                    Clicked="Login"
+                    HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="ManualDeviceLoginBtn"
+                    Text="DeviceLogin"
+                    Clicked="DeviceLogin"
+                    HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="LogoutBtn"
+                    Text="Logout"
+                    Clicked="Logout"
+                    HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="TestProfilePicViewBtn"
+                    Text="TestProfilePicView"
+                    Clicked="TestProfilePicView"
+                    HorizontalOptions="Fill" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

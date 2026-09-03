@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/samples/" />
+  <Folder Name="/samples/Login/" />
+  <Folder Name="/samples/Login/LoginMauiSample/">
+    <Project Path="samples/Login/LoginMauiSample/LoginMauiSample.Nuget.csproj" />
+  </Folder>
+  <Folder Name="/samples/Share/" />
+  <Folder Name="/samples/Share/ShareMauiSample/">
+    <Project Path="samples/Share/ShareMauiSample/ShareMauiSample.Nuget.csproj" />
+  </Folder>
+</Solution>

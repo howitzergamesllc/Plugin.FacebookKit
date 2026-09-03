@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.yourcompany.yourapp">
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true">
+		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+		<meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/facebook_app_name"/>
+		<meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+		<provider android:authorities="com.facebook.app.FacebookContentProviderYOURFACEBOOKAPPID"
+			android:name="com.facebook.FacebookContentProvider"
+			android:exported="true" />
+		<activity
+			android:name="com.facebook.FacebookActivity"
+			android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+			android:label="@string/facebook_app_name" />
+		<provider
+			android:name="androidx.core.content.FileProvider"
+			android:authorities="${applicationId}.fileprovider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/paths" />
+		</provider>
+	</application>
+	<queries>
+		<package android:name="com.facebook.katana" />
+		<package android:name="com.facebook.orca" />
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> <!-- allows app to access Facebook app features -->
+        <provider android:authorities="com.facebook.orca.provider.SEND" /> <!-- allows sharing to Messenger app -->
+    </queries>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest>

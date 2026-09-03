@@ -1,0 +1,176 @@
+﻿<?xml version = "1.0" encoding = "UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:facebook="clr-namespace:Plugin.FacebookKit.Share.Controls;assembly=Plugin.FacebookKit.Share"
+            x:Class="ShareMauiSample.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            x:Name="layout"
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                x:Name="dotnetbotImage"
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a submarine number ten" />
+            <Label
+                Text="Facebook SDKs"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Label
+                Text="ShareMauiSample"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <Label
+                Text="Shares an image in memory asset."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <facebook:ShareButton
+                x:Name="ImageMemoryShareBtn" WidthRequest="120"/>
+
+            <Label
+                Text="Shares an image from a Uri."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <facebook:ShareButton
+                x:Name="ImageUriShareBtn" WidthRequest="120"/>
+                
+            <Label
+                Text="Sends an image from a Uri."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <facebook:SendButton
+                x:Name="ImageSendBtn" WidthRequest="120"/>
+
+            <Label
+                Text="Shares an image in memory asset."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <Button
+                x:Name="ManualImageShareBtn"
+                Text="ManualImageShareBtn"
+                Pressed="HandleManualMemoryImageShareTouch"/>
+
+            <Label
+                Text="Shares a video in memory asset."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <Button
+                x:Name="ManualVideoShareBtn"
+                Text="ManualVideoShareBtn"
+                Pressed="HandleManualMemoryVideoShareTouch"/>
+
+            <Label
+                Text="Sends an image from a Uri."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <Button
+                x:Name="ManualImageSendBtn"
+                Text="ManualSendBtn"
+                Pressed="HandleManualSendTouch"/>
+
+            <Label
+                Text="Shares an in memory video."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <facebook:ShareButton
+                x:Name="VideoMemoryShareBtn" WidthRequest="120"/>
+
+            <Label
+                Text="Shares a video from a Uri."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <facebook:ShareButton
+                x:Name="VideoUriShareBtn" WidthRequest="120"/>
+
+            <Label
+                Text="Sends a video from a Uri."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <facebook:SendButton
+                x:Name="VideoSendBtn" WidthRequest="120"/>
+                
+            <Label
+                Text="Shares an app store page from a Uri."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <facebook:ShareButton
+                x:Name="AppShareBtn" WidthRequest="120"/>
+
+            <Label
+                Text="Sends an app store page from a Uri."
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <facebook:SendButton
+                x:Name="AppSendBtn" WidthRequest="120"/>
+
+
+            <!--################## Workarounds ##################-->
+            <Label
+                Text="Sends a hyperlink using messenger utility workaround"
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <Button
+                x:Name="HandleWorkaroundHyperLinkBtn"
+                Text="HandleWorkaroundHyperLinkBtn"
+                Pressed="HandleWorkaroundHyperLink"/>
+                
+            <Label
+                Text="Sends a text message using messenger utility workaround"
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <Button
+                x:Name="HandleWorkaroundTextBtn"
+                Text="HandleWorkaroundTextBtn"
+                Pressed="HandleWorkaroundText"/>
+                
+            <Label
+                Text="Sends a photo using messenger utility workaround"
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <Button
+                x:Name="HandleWorkaroundPhotoBtn"
+                Text="HandleWorkaroundPhotoBtn"
+                Pressed="HandleWorkaroundPhoto"/>
+                
+            <Label
+                Text="Sends a video using messenger utility workaround"
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <Button
+                x:Name="HandleWorkaroundVideoBtn"
+                Text="HandleWorkaroundVideoBtn"
+                Pressed="HandleWorkaroundVideo"/>
+                
+            <Label
+                Text="Sends audio using messenger utility workaround"
+                Style="{StaticResource SubHeadline}"
+                FontSize="11"
+                SemanticProperties.HeadingLevel="Level3" />
+            <Button
+                x:Name="HandleWorkaroundAudioBtn"
+                Text="HandleWorkaroundAudioBtn"
+                Pressed="HandleWorkaroundAudio"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
