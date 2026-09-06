@@ -91,8 +91,6 @@ This a custom cross platform implementation of binding packages that bind the na
 
 ## Project Configuration
 
-This plugin currently doesn't support windows, the project is set up such that developers can call "FacebookPluginLogin.Current" without crashing. Instead any calls on windows will throw, catch, and log "NotImplementedException" on windows and return a null value. Just null check the implementation before making calls to windows.
-
 Be sure to change the `TargetFramework` this project uses (`net10.0-*`)
 
 If using the native Facebook Button Controls is desired, they can be loaded by calling ".UseFacebookControls" in the `MauiProgram.cs` like this:
@@ -113,6 +111,27 @@ public static class MauiProgram
     }
 }
 ```
+
+If only using [Login](https://github.com/howitzergamesllc/Plugin.FacebookKit/blob/main/docs/Login.md) is desired, those individual controls can be loaded by calling ".UseFacebookLoginControls" in the `MauiProgram.cs` like this:
+
+```c#
+using Plugin.FacebookKit;
+
+public static class MauiProgram
+{
+    public static MauiApp CreateMauiApp()
+    {
+        return MauiApp
+            .CreateBuilder()
+            .UseMauiApp<App>()
+            ...
+            .UseFacebookLoginControls()
+            .Build();
+    }
+}
+```
+
+The same applies for the [Sharing](https://github.com/howitzergamesllc/Plugin.FacebookKit/blob/main/docs/Share.md) component.
 
 
 ## Windows specifics (Not Implemented)
@@ -250,7 +269,7 @@ public class AppDelegate : MauiUIApplicationDelegate
 See the [docs](https://github.com/howitzergamesllc/Plugin.FacebookKit/blob/main/docs) for more details on feature implementation.
 
 In the [samples](https://github.com/howitzergamesllc/Plugin.FacebookKit/blob/main/samples) folder there are two sample projects, one for sharing and one for login. 
-Though there is no combinded sample, if using both features, developers can simply use [Plugin.FacebookKit] and for controls in the MauiAppBuilder <c>.UseFacebookControls()</c>
+Though there is no combinded sample, if using both features, developers can simply use [Plugin.FacebookKit](https://github.com/howitzergamesllc/Plugin.FacebookKit/blob/main/docs/Plugin.md).
 
 To run the sample successfully, ensure to update the `Info.plist, Entitlements.plist, String.xml, AndroidManifest.xml` files to match the app project information in your facebook app project.
 
