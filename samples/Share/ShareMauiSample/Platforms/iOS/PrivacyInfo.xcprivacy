@@ -5,10 +5,6 @@
 <dict>
     <key>NSPrivacyTracking</key>
     <true/>
-    <key>NSPrivacyTrackingDomains</key>
-    <array>
-        <string>facebook.com</string>
-    </array>
     <key>NSPrivacyCollectedDataTypes</key>
     <array/>
     <key>NSPrivacyAccessedAPITypes</key>
