@@ -282,6 +282,9 @@ The license developers are required to accept is a standard MIT license located 
 
 ## Release notes
 
+### Version 10.0.100
+  - Updated Microsoft.Maui.Controls to 10.0.100.
+
 ### Version 10.0.90
   - Updated Microsoft.Maui.Controls to 10.0.90.
 
