@@ -3,7 +3,7 @@ using UIKit;
 using Foundation;
 using Plugin.FacebookKit.Core;
 
-namespace ShareMauiSample;
+namespace LoginMauiSample;
 
 [Register("SceneDelegate")]
 public class SceneDelegate : MauiUISceneDelegate

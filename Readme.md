@@ -317,6 +317,7 @@ The license developers are required to accept is a standard MIT license located 
 ## Release notes
 
 ### Version 10.0.110
+  - Added SceneDelegate.cs and OpenURL Override to sample projects for share callback handling on Apple.
   - Updated minimum MacCatalyst version to 17.0 for Xcode 27 release.
   - Updated Microsoft.Maui.Controls to 10.0.110.
 
