@@ -224,6 +224,13 @@ private void PrintFacebookKeyHash()
 
 ## iOS specifics
 
+### Sharing Photos and Videos through Facebook requires the following privacy key added to the info.Plist
+
+```xml
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Allow access to your photos and videos to share with Facebook.</string>
+```
+
 ### To intialize Facebook SDK and get callbacks from the native Facebook SDK, register the SDK's AppDelegate. If using Login, call initialize here.
 ```c#    
 using Foundation;
