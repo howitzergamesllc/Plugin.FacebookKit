@@ -14,7 +14,7 @@
 		<OutputType>Exe</OutputType>
 		<RootNamespace>LoginMauiSample.Nuget</RootNamespace>
 		<UseMaui>true</UseMaui>
-		<MauiVersion>10.0.100</MauiVersion>
+		<MauiVersion>10.0.101</MauiVersion>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
@@ -66,10 +66,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Plugin.FacebookKit.Core" Version="10.0.100-local" />
-		<PackageReference Include="Plugin.FacebookKit.Login" Version="10.0.100-local" />
+		<PackageReference Include="Plugin.FacebookKit.Core" Version="10.0.101-local" />
+		<PackageReference Include="Plugin.FacebookKit.Login" Version="10.0.101-local" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.10" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.11" />
 		<PackageReference Include="Xamarin.Build.Download" Version="0.11.4" />
 	</ItemGroup>
 

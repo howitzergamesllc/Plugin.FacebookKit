@@ -14,7 +14,7 @@
 		<OutputType>Exe</OutputType>
 		<RootNamespace>LoginMauiSample</RootNamespace>
 		<UseMaui>true</UseMaui>
-		<MauiVersion>10.0.100</MauiVersion>
+		<MauiVersion>10.0.101</MauiVersion>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
@@ -79,7 +79,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.10" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.11" />
 		<PackageReference Include="Xamarin.Build.Download" Version="0.11.4" />
 	</ItemGroup>
 

@@ -144,10 +144,10 @@ git push -u origin main
 ## Push package for private publishing.
 
 ```cmd
-dotnet nuget push "C:\Path\to\your\projects\Plugin.FacebookKit\Plugin.FacebookKit\src\Plugin\bin\release\Plugin.FacebookKit.10.0.100.nupkg" --source "https://nuget.pkg.github.com/youraccountname/index.json" --api-key $env:GITHUBTOKEN
-dotnet nuget push "C:\Path\to\your\projects\Plugin.FacebookKit\Plugin.FacebookKit\src\Core\bin\release\Plugin.FacebookKit.Core.10.0.100.nupkg" --source "https://nuget.pkg.github.com/youraccountname/index.json" --api-key $env:GITHUBTOKEN
-dotnet nuget push "C:\Path\to\your\projects\Plugin.FacebookKit\Plugin.FacebookKit\src\Login\bin\release\Plugin.FacebookKit.Login.10.0.100.nupkg" --source "https://nuget.pkg.github.com/youraccountname/index.json" --api-key $env:GITHUBTOKEN
-dotnet nuget push "C:\Path\to\your\projects\Plugin.FacebookKit\Plugin.FacebookKit\src\Share\bin\release\Plugin.FacebookKit.Share.10.0.100.nupkg" --source "https://nuget.pkg.github.com/youraccountname/index.json" --api-key $env:GITHUBTOKEN
+dotnet nuget push "C:\Path\to\your\projects\Plugin.FacebookKit\Plugin.FacebookKit\src\Plugin\bin\release\Plugin.FacebookKit.10.0.101.nupkg" --source "https://nuget.pkg.github.com/youraccountname/index.json" --api-key $env:GITHUBTOKEN
+dotnet nuget push "C:\Path\to\your\projects\Plugin.FacebookKit\Plugin.FacebookKit\src\Core\bin\release\Plugin.FacebookKit.Core.10.0.101.nupkg" --source "https://nuget.pkg.github.com/youraccountname/index.json" --api-key $env:GITHUBTOKEN
+dotnet nuget push "C:\Path\to\your\projects\Plugin.FacebookKit\Plugin.FacebookKit\src\Login\bin\release\Plugin.FacebookKit.Login.10.0.101.nupkg" --source "https://nuget.pkg.github.com/youraccountname/index.json" --api-key $env:GITHUBTOKEN
+dotnet nuget push "C:\Path\to\your\projects\Plugin.FacebookKit\Plugin.FacebookKit\src\Share\bin\release\Plugin.FacebookKit.Share.10.0.101.nupkg" --source "https://nuget.pkg.github.com/youraccountname/index.json" --api-key $env:GITHUBTOKEN
 ```
 
 
