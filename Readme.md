@@ -263,6 +263,33 @@ public class AppDelegate : MauiUIApplicationDelegate
 }
 ```
 
+### When using Xcode 27, SceneDelegate is required which will take priority when responding to OpenUrl callbacks. Add this override to the SceneDelegate.cs class in the platforms folder.
+
+```c#
+using UIKit;
+using Foundation;
+using Plugin.FacebookKit.Core;
+
+namespace ShareMauiSample;
+
+[Register("SceneDelegate")]
+public class SceneDelegate : MauiUISceneDelegate
+{
+    public override bool OpenUrl(UIScene scene, NSSet<UIOpenUrlContext> urlContexts)
+    {
+        if(urlContexts.ToArray().FirstOrDefault() is not UIOpenUrlContext context)
+            return base.OpenUrl(scene, urlContexts);
+
+        var url = context.Url;
+        var options = context.Options;
+
+        var dictionary = new NSDictionary(new NSString("UIApplicationOpenURLOptionsSourceApplicationKey"), new NSString(options.SourceApplication ?? ""),
+        new NSString("UIApplicationOpenURLOptionsAnnotationKey"), options.Annotation ?? null);
+
+        return FacebookApplicationDelegate.OpenUrl(UIApplication.SharedApplication, url, dictionary);
+    }
+}
+```
 
 ## Documentation and samples
 
@@ -281,6 +308,10 @@ The license developers are required to accept is a standard MIT license located 
 
 
 ## Release notes
+
+### Version 10.0.110
+  - Updated minimum MacCatalyst version to 17.0 for Xcode 27 release.
+  - Updated Microsoft.Maui.Controls to 10.0.110.
 
 ### Version 10.0.101
   - Updated Microsoft.Maui.Controls to 10.0.101.
