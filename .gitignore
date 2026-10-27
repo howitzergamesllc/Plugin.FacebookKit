@@ -237,6 +237,7 @@ _Pvt_Extensions
 
 
 .fake
+.DS_Store
 
 # Remove Sample Project App Info
 /samples/Login/LoginMauiSample/Platforms/TestAndroid/
