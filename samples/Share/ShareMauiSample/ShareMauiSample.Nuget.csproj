@@ -14,7 +14,7 @@
 		<OutputType>Exe</OutputType>
 		<RootNamespace>ShareMauiSample</RootNamespace>
 		<UseMaui>true</UseMaui>
-		<MauiVersion>10.0.80</MauiVersion>
+		<MauiVersion>10.0.90</MauiVersion>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
@@ -70,8 +70,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Plugin.FacebookKit.Core" Version="10.0.80-local" />
-		<PackageReference Include="Plugin.FacebookKit.Share" Version="10.0.80-local" />
+		<PackageReference Include="Plugin.FacebookKit.Core" Version="10.0.90-local" />
+		<PackageReference Include="Plugin.FacebookKit.Share" Version="10.0.90-local" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.9" />
 		<PackageReference Include="Xamarin.Build.Download" Version="0.11.4" />
