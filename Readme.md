@@ -39,7 +39,7 @@ dotnet package add Plugin.FacebookKit
 Visual studio can resolve the dependency automatically by adding the package reference directly to the .csproj file with the following text
 ```xml
 <ItemGroup>
-  <PackageReference Include="Plugin.FacebookKit" Version="10.0.120" />
+  <PackageReference Include="Plugin.FacebookKit" Version="10.0.130" />
 </ItemGroup>
 ```
 
@@ -315,6 +315,9 @@ The license developers are required to accept is a standard MIT license located 
 
 
 ## Release notes
+
+### Version 10.0.130
+  - Updated Microsoft.Maui.Controls to 10.0.130.
 
 ### Version 10.0.120
   - Updated Microsoft.Maui.Controls to 10.0.120.
