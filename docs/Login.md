@@ -40,7 +40,7 @@ FacebookPluginShare.CurrentProfile;
 
 ### iOS specifics
 
-Recently the facebook sdk for iOS has switched to limited login. See (https://developers.facebook.com/documentation/facebook-login/ios/limited-login) for more details.
+Recently the facebook sdk for iOS has switched to limited login. See [LimitedLogin](https://developers.facebook.com/documentation/facebook-login/ios/limited-login) for more details.
 Limited login prevents DeviceLoginManager and ProfilePictureView from working correctly. Since there is no Valid AccessToken, the native Graph API calls fail. The facebook profile can still be loaded into memory manually like so:
 ```csharp
 var uri = FacebookPluginShare.CurrentProfile.ImageURL.AbsoluteUri;

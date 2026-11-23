@@ -39,7 +39,7 @@ dotnet package add Plugin.FacebookKit
 Visual studio can resolve the dependency automatically by adding the package reference directly to the .csproj file with the following text
 ```xml
 <ItemGroup>
-  <PackageReference Include="Plugin.FacebookKit" Version="10.0.130" />
+  <PackageReference Include="Plugin.FacebookKit" Version="11.0.0" />
 </ItemGroup>
 ```
 
@@ -91,7 +91,7 @@ This a custom cross platform implementation of binding packages that bind the na
 
 ## Project Configuration
 
-Be sure to change the `TargetFramework` this project uses (`net10.0-*`)
+Be sure to change the `TargetFramework` this project uses (`net11.0-*`)
 
 If using the native Facebook Button Controls is desired, they can be loaded by calling ".UseFacebookControls" in the `MauiProgram.cs` like this:
 
@@ -315,6 +315,9 @@ The license developers are required to accept is a standard MIT license located 
 
 
 ## Release notes
+
+### Version 11.0.0
+  - Net11.0 Target Upgrade
 
 ### Version 10.0.130
   - Updated Microsoft.Maui.Controls to 10.0.130.
