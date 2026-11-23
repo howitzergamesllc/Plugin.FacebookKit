@@ -39,7 +39,7 @@ dotnet package add Plugin.FacebookKit
 Visual studio can resolve the dependency automatically by adding the package reference directly to the .csproj file with the following text
 ```xml
 <ItemGroup>
-  <PackageReference Include="Plugin.FacebookKit" Version="11.0.0" />
+  <PackageReference Include="Plugin.FacebookKit" Version="11.0.10" />
 </ItemGroup>
 ```
 
@@ -315,29 +315,4 @@ The license developers are required to accept is a standard MIT license located 
 
 
 ## Release notes
-
-### Version 11.0.0
-  - Net11.0 Target Upgrade
-
-### Version 10.0.130
-  - Updated Microsoft.Maui.Controls to 10.0.130.
-
-### Version 10.0.120
-  - Updated Microsoft.Maui.Controls to 10.0.120.
-
-### Version 10.0.110
-  - Added SceneDelegate.cs and OpenURL Override to sample projects for share callback handling on Apple.
-  - Updated minimum MacCatalyst version to 17.0 for Xcode 27 release.
-  - Updated Microsoft.Maui.Controls to 10.0.110.
-
-### Version 10.0.101
-  - Updated Microsoft.Maui.Controls to 10.0.101.
-
-### Version 10.0.100
-  - Updated Microsoft.Maui.Controls to 10.0.100.
-
-### Version 10.0.90
-  - Updated Microsoft.Maui.Controls to 10.0.90.
-
-### Version 10.0.80
-  - Initial release.
+To see whats changed, review recent [Releases](https://github.com/howitzergamesllc/Plugin.FacebookKit/releases).

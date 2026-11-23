@@ -23,10 +23,10 @@
     </PropertyGroup>
     
 	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-		<PackageVersion>11.0.0-local</PackageVersion>
+		<PackageVersion>11.0.10-local</PackageVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
-		<PackageVersion>11.0.0.0</PackageVersion>
+		<PackageVersion>11.0.10.0</PackageVersion>
 	</PropertyGroup>
 
 	<PropertyGroup>
